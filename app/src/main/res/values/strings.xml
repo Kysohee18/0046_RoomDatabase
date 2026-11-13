@@ -17,7 +17,9 @@
     <string name="no">Tidak</string>
     <string name="delete">hapus</string>
     <string name="update">Edit</string>
-    <strin
+    <string name="attention">Perhatian</string>
+    <string name="tanya">Apakah anda yakin ingin menghapus data siswa ini?</string>
+
 
 
 

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">pertemuan7</string>
+    <string name="entry_siswa">Tambah Siswa</string>
+    <string name="deskripsi_no_item">Tidak ada data siswa. tap + untuk menambahkan data siswa</string>
+    <string name="name">Nama Siswa</string>
+    <string name="alamat">Alamat siswa</string>
+    <string name="telpon">Telpon siswa</string>
+
 </resources>

@@ -5,5 +5,10 @@
     <string name="name">Nama Siswa</string>
     <string name="alamat">Alamat siswa</string>
     <string name="telpon">Telpon siswa</string>
+    <string name="nama1">Nama siswa :</string>
+    <string name="alamat1">Alamat siswa :</string>
+    <string name="telpon1">Telpon siswa :</string>
+    <string name="required_field">required field</string>
+
 
 </resources>

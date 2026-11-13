@@ -1,5 +1,7 @@
 package com.example.pertemuan7.room
 
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
 import androidx.room.Query
 
 interface SiswaDao {

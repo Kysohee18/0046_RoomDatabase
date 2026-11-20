@@ -37,7 +37,7 @@ import com.example.pertemuan7.room.Siswa
 import com.example.pertemuan7.uicontroller.DestinasiHome
 import com.example.pertemuan7.uicontroller.SiswaTopAppBar
 import com.example.pertemuan7.viewmodel.HomeViewModel
-import com.example.pertemuan7.viewmodel.PenyediaViewModel
+import com.example.pertemuan7.viewmodel.provider.PenyediaViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

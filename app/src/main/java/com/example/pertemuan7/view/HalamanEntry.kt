@@ -28,7 +28,7 @@ import com.example.pertemuan7.uicontroller.DestinasiEntry
 import com.example.pertemuan7.uicontroller.SiswaTopAppBar
 import com.example.pertemuan7.viewmodel.DetailSiswa
 import com.example.pertemuan7.viewmodel.EntryViewModel
-import com.example.pertemuan7.viewmodel.PenyediaViewModel
+import com.example.pertemuan7.viewmodel.provider.PenyediaViewModel
 import com.example.pertemuan7.viewmodel.UIStateSiswa
 import kotlinx.coroutines.launch
 

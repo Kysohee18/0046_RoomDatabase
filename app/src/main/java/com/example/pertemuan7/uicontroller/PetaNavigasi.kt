@@ -80,7 +80,12 @@ fun HostNavigasi(
                 navArgument(DestinasiDetailSiswa.itemIdArg) { type = NavType.IntType }
             )
         ) {
-            DetailSiswaScreen(navigateBack = { navController.popBackStack() })
+            DetailSiswaScreen(
+                navigateBack = { navController.popBackStack() },
+                navigateToEdit = { siswaId ->
+                    navController.navigate("${DestinasiEditSiswa.route}/$siswaId")
+                }
+            )
         }
         composable(
             route = DestinasiEditSiswa.routeWithArgs,

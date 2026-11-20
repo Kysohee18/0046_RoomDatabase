@@ -20,6 +20,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.pertemuan7.R
 import com.example.pertemuan7.view.EntrySiswaScreen
 import com.example.pertemuan7.view.DetailSiswaScreen
+import com.example.pertemuan7.view.EditSiswaScreen
 import com.example.pertemuan7.view.HomeScreen
 
 @Composable
@@ -80,6 +81,17 @@ fun HostNavigasi(
             )
         ) {
             DetailSiswaScreen(navigateBack = { navController.popBackStack() })
+        }
+        composable(
+            route = DestinasiEditSiswa.routeWithArgs,
+            arguments = listOf(
+                navArgument(DestinasiEditSiswa.itemIdArg) { type = NavType.IntType }
+            )
+        ) {
+            EditSiswaScreen(
+                navigateBack = { navController.popBackStack() },
+                onNavigateUp = { navController.navigateUp() }
+            )
         }
     }
 }

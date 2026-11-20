@@ -12,11 +12,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
+import androidx.navigation.navArgument
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.pertemuan7.R
 import com.example.pertemuan7.view.EntrySiswaScreen
+import com.example.pertemuan7.view.DetailSiswaScreen
 import com.example.pertemuan7.view.HomeScreen
 
 @Composable
@@ -61,11 +64,22 @@ fun HostNavigasi(
     ) {
         composable(DestinasiHome.route) {
             HomeScreen(
-                navigateToItemEntry = { navController.navigate(DestinasiEntry.route) }
+                navigateToItemEntry = { navController.navigate(DestinasiEntry.route) },
+                navigateToItemUpdate = { siswaId ->
+                    navController.navigate("${DestinasiDetailSiswa.route}/$siswaId")
+                }
             )
         }
         composable(DestinasiEntry.route) {
             EntrySiswaScreen(navigateBack = { navController.popBackStack() })
+        }
+        composable(
+            route = DestinasiDetailSiswa.routeWithArgs,
+            arguments = listOf(
+                navArgument(DestinasiDetailSiswa.itemIdArg) { type = NavType.IntType }
+            )
+        ) {
+            DetailSiswaScreen(navigateBack = { navController.popBackStack() })
         }
     }
 }
